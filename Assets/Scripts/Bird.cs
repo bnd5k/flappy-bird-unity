@@ -23,10 +23,7 @@ public class Bird : MonoBehaviour {
 	{
 		if (isDead == false) 
 		{
-			Debug.Log (string.Format("hi"));
-
 			if (Input.GetMouseButtonDown(0)) {
-				Debug.Log (string.Format("farts"));
 				rb2d.velocity = Vector2.zero;
 				rb2d.AddForce (new Vector2 (0, upForce));
 				anim.SetTrigger ("Flap");
